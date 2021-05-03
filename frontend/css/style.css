@@ -191,7 +191,9 @@ a:hover {
 #photo img {
   width: 100%;
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  background-color: #4b1e26!important;
+  border: 10px solid rgba(0, 0, 0, 0.125)!important;
+  border-radius: 1.30rem!important;
 }
 
 @media all and (max-width: 900px) {
@@ -201,8 +203,8 @@ a:hover {
 }
 
 #confirm {
-  margin-left: 10%;
-  padding: 5%;
+  margin-left: 65%;
+  padding: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,9 +218,27 @@ a:hover {
   width: 70px;
   font-size: 1.3rem;
   padding: 1%;
-  background-color: beige;
+  background-color: #4b1e26;
   border-radius: 15%;
   margin-left: 2%;
+}
+
+#ajout-panier:hover {
+  width: 70px;
+  font-size: 1.3rem;
+  padding: 1%;
+  background-color: #3C181E;
+  border-radius: 15%;
+  margin-left: 2%;
+}
+
+.add-basket {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.panier-color {
+  color: #fff;
 }
 /* FIN FICHE PRODUITS */
 

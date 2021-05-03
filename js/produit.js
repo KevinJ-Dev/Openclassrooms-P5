@@ -1,5 +1,4 @@
 //récupération de l'id produit dans l'url
-
 const queryString = window.location.search;
 const urlParam = new URLSearchParams(queryString);
 const idProduct = urlParam.get('id');
@@ -31,7 +30,7 @@ function showProduct() {
     //Choix de la lentille
     const prodLense = document.createElement('div');
     prodCard.appendChild(prodLense);
-    prodLense.innerHTML = "<label for='lenses'>Lentille :</label><select name='lenses' id='lenses'><option>Choisir</option></select>";
+    prodLense.innerHTML = "<label for='lenses'>Choix lentille :</label><select name='lenses' id='lenses'><option>Sélectionner</option></select>";
 
     //création et affichage du menu de choix de le lentille
     const menuLenses = document.getElementById('lenses');
@@ -44,7 +43,7 @@ function showProduct() {
     //Choix de la quantité commandé
     const prodQty = document.createElement('div');
     prodCard.appendChild(prodQty);
-    prodQty.innerHTML = "<label for='quantity'>Quantité</label><input type='number' name='quantity' id='quantity' value='1'>";
+    prodQty.innerHTML = "<label for='quantity'>Quantité :</label><input type='number' name='quantity' id='quantity' value='1'>";
 
     //Photo
     const prodPhoto = document.getElementById('photo');
