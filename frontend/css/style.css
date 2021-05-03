@@ -204,7 +204,7 @@ a:hover {
 
 #confirm {
   margin-left: 65%;
-  padding: 2%;
+  padding: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,6 +241,135 @@ a:hover {
   color: #fff;
 }
 /* FIN FICHE PRODUITS */
+
+/* PANIER */
+#main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media all and (max-width: 900px) {
+  #main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+#control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+#control button {
+  background-color: #4b1e26;
+  border-radius: 10%;
+  height: 50px;
+}
+
+#control button:hover {
+  background-color: #3C181E;
+  border-radius: 10%;
+  height: 50px;
+}
+
+#vide-panier {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#confirm {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tableau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: end;
+  width: 60%;
+}
+
+@media all and (max-width: 430px) {
+  .tableau {
+    width: 95%;
+  }
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table button {
+  background-color: red;
+  border-radius: 20%;
+}
+
+tbody th {
+  margin-top: 10%;
+  font-weight: normal;
+}
+
+form {
+  display: table;
+  padding: 3%;
+  width: 30%;
+}
+
+@media all and (max-width: 900px) {
+  form {
+    width: 60%;
+  }
+}
+
+.form-contact {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+  margin: 2%;
+}
+
+#champs-obligatoire {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+#title-fac {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* FIN PANIER */
 
 /* FOOTER */
 .text-white {
