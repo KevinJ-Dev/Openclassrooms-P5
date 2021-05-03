@@ -317,6 +317,10 @@ a:hover {
   width: 60%;
 }
 
+#prix-total {
+  font-weight: bold;
+}
+
 @media all and (max-width: 430px) {
   .tableau {
     width: 95%;
@@ -330,8 +334,10 @@ table {
 }
 
 table button {
-  background-color: red;
-  border-radius: 20%;
+  background-color: #ca2140;
+  border-radius: 10%;
+  color: #fff;
+  font-weight: bold;
 }
 
 tbody th {
