@@ -39,8 +39,6 @@ a:hover {
     text-align: center;
 }
   
-/* Card Camera */
-  
 .card {
     margin: 20px 10px;
 }
@@ -138,6 +136,91 @@ a:hover {
     align-items: center;
 }
 /* FIN INDEX */
+
+/* FICHE PRODUITS */
+#fiche-produit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@media all and (max-width: 900px) {
+  #fiche-produit {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 40%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 900px) {
+  #info {
+    width: 80%;
+  }
+}
+
+#photo {
+  width: 40%;
+}
+
+#photo img {
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+@media all and (max-width: 900px) {
+  #photo {
+    width: 80%;
+  }
+}
+
+#confirm {
+  margin-left: 10%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#ajout-panier {
+  width: 70px;
+  font-size: 1.3rem;
+  padding: 1%;
+  background-color: beige;
+  border-radius: 15%;
+  margin-left: 2%;
+}
+/* FIN FICHE PRODUITS */
 
 /* FOOTER */
 .text-white {
