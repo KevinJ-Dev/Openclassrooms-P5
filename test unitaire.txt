@@ -1,0 +1,77 @@
+Openclassrooms Porjet 5 Construisez un site e-commerce
+
+Test Unitaire
+
+/* index */
+
+Fichier : index.html/js
+Test effectué :
+Récupéré les informations dans l'API http://localhost:3000/api/cameras qui nous a été fourni, pour bute d'afficher tous les produits sur la même page (index.html)
+
+Résultat attendu : Validé
+Afficher dans son intégralité les produits en question sur la page d'accueil (index.html)
+- Les images
+- Nom de chaque produit
+- Leurs descriptions
+- Le prix
+- Bouton "en savoir plus" (redirection vers la page produit en passant par l'ID en paramètre de l'URL)
+
+/* produit */
+
+Fichier : produit.html/js
+Test effectué :
+Afficher un seul produit, avec les différentes informations qui lui sont proposés en fonction du produit sélectionné depuis la page d'accueil,
+Ainsi de mettre les options pour chaque produit, mettre chaque produit dans un panier (panier.html/js)
+
+Résultat attendu : Validé
+Afficher un seul produit lors d'une sélection depuis la page d'accueil (index.html)
+Afficher les options dans un menu déroulant
+L'envoi du produit dans le panier se fait bien avec toutes les informations le concernant
+Afficher les informations que l'on a récupéré par leurs ID
+- L'image du produit
+- Nom du produit
+- Choix d'option
+- La descriptions
+- Le prix
+- Bouton "panier"
+
+/* panier */
+
+Fichier : panier.html/js
+Test effectué :
+Récupéré le panier dans la page panier.html, stocker les produits sélectionnés auparavant et récupéré leurs informations
+- L'image du produit
+- Nom du produit
+- Choix d'option
+- La quantité
+- Le prix
+Le prix total change en fonction des produits ajouter dans le panier ou en supprimant, récupéré les informations du formulaire qui se trouve dans la page panier.html,
+Afficher une erreur si le formulaire n'est pas correctement bien saisi, bouton "passer la commande" et de récupéré les informations dans la page order.html/js
+- Nom du client
+- Montant total du panier
+
+Résultat attendu Validé
+Le panier s'affiche correctement avec leurs produits sélectionné ainsi que leurs informations
+- Nom du produit
+- Choix d'option
+- La quantité
+- Le prix
+Le prix total est bien synchronisé avec les articles dans le panier,
+le formulaire s'affiche bien, avec les messages d'erreur en cas de mauvais format des champs à remplir,
+un message s'affiche si le panier est vide,
+une fois la commande passer on vide le panier
+
+/* confirmation */
+
+Fichier: confirmation.html/js
+Test effectué:
+Afficher la page de confirmation (confirmation.html) et de vérifier que les informations de la commande son bien récapitulée
+- Nom du client
+- prix total
+- Numéro de la commande
+
+Résultat attendu: Validé
+La page s'affiche correctement une fois la commande validé, on retrouve toute les informations de la commande
+- Nom du client
+- prix total
+- Numéro de la commande
